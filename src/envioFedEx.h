@@ -8,6 +8,8 @@ class EnvioFedEx : public Envio {
 
     public:
     EnvioFedEx(double pesoEnvio, double distanciaEnvio);
+
+    virtual double calculoEnvio();
 };
 
 #endif

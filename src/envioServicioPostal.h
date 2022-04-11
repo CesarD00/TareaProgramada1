@@ -9,6 +9,8 @@ class EnvioServicioPostal : public Envio{
     public:
     EnvioServicioPostal(double pesoEnvio, double distanciaEnvio, int numClaseEnvio);
 
+    virtual double calculoEnvio();
+
 };
 
 #endif

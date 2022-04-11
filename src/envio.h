@@ -8,6 +8,7 @@ class Envio {
     double distancia;
 
     public:
+    virtual double calculoEnvio() = 0;
        
 
 
