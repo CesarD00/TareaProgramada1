@@ -7,5 +7,11 @@ version_debug:
 	g++ $(FLAGS) src/main.cpp -o bin/main.o
 	g++ -g -o bin/calculoEnvio bin/envioServicioPostal.o bin/envioFedEx.o bin/main.o 
 
+test:
+	mkdir -p bin
+	g++ $(FLAGS) tests/envioServicioPostal_tests.cpp -o bin/envioServicioPostal_tests.o
+	g++ $(FLAGS) src/envioServicioPostal.cpp -o bin/envioServicioPostal.o
+	g++ -g -o bin/tests bin/envioServicioPostal_tests.o bin/envioServicioPostal.o -lgtest -lgtest_main -lpthread	
+
 clean:
 	rm -Rf bin					
