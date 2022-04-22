@@ -6,6 +6,13 @@ EnvioFedEx::EnvioFedEx(double pesoEnvio, double distanciaEnvio) {
     this->costoBase = 35.00;   
 }
 
+
+EnvioFedEx::EnvioFedEx(){
+    this->peso = 0;
+    this->distancia = 0;
+    this->costoBase = 35.00;
+}
+
 double EnvioFedEx::calculoEnvio() {
     int costoTotal = this->costoBase;
 
@@ -18,4 +25,8 @@ double EnvioFedEx::calculoEnvio() {
     }
 
     return costoTotal;
+}
+
+double EnvioFedEx::getCostoBase(){
+    return this->costoBase;
 }

@@ -54,7 +54,7 @@ namespace {
         /// AAA
 
         // Arange - se configura el escenario
-        EnvioFedEx* envio = new EnvioFedEx(10, 500);
+        EnvioFedEx* envio = new EnvioFedEx(5, 400);
 
         // Act - se ejecuta la operación
         double actual = envio->calculoEnvio();

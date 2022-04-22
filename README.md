@@ -1,4 +1,4 @@
-# TareaProgramada1
+# TareaProgramada1 - Cesar Díaz Mora. C12552
 
 Para compilar el programa, ejecute la siguiente instrucción:
 

@@ -102,7 +102,7 @@ namespace {
         /// AAA
 
         // Arange - se configura el escenario
-        EnvioServicioPostal* envio = new EnvioServicioPostal(2, 5000, 3);
+        EnvioServicioPostal* envio = new EnvioServicioPostal(7, 5000, 3);
 
         // Act - se ejecuta la operación
         double actual = envio->calculoEnvio();

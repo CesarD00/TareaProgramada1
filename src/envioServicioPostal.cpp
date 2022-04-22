@@ -6,6 +6,12 @@ EnvioServicioPostal::EnvioServicioPostal(double pesoEnvio, double distanciaEnvio
     this->numClase = numClaseEnvio;
 }
 
+EnvioServicioPostal::EnvioServicioPostal(){
+    this->peso = 0;
+    this->distancia = 0;
+    this->numClase = 0;
+}
+
 double EnvioServicioPostal::calculoEnvio() {
     switch(numClase) {
         case 1:
@@ -42,6 +48,14 @@ double EnvioServicioPostal::calculoEnvio() {
 
             break;
 
-    }   
+    } 
 
 }  
+
+void EnvioServicioPostal::setNumClase(int unNumeroClase){
+        this->numClase = unNumeroClase;
+}  
+
+int EnvioServicioPostal::getNumClase(){
+    return this->numClase;
+}
