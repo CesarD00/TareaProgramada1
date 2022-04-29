@@ -8,6 +8,8 @@
 using namespace std;
 
 int main() {
+
+    // Ejemplo de uso
     double totalEnvios = 0;
     vector<Envio*> arregloEnvios;
 
@@ -24,25 +26,24 @@ int main() {
     arregloEnvios.push_back(envio1);
     arregloEnvios.push_back(envio2);
 
-    
+    cout<<"Peso: "<<envio1->getPeso()<<" Distancia: "<<envio1->getDistancia()<<" Clase: "<<envio1->getNumClase()<<endl;
+    cout<<"Peso: "<<envio2->getPeso()<<" Distancia: "<<envio2->getDistancia()<<" Costo base: "<<envio2->getCostoBase()<<endl;
 
     for(Envio* envio : arregloEnvios){
-        int contador = 0;
+        int contador;
         double costo = 0;
         costo = envio->calculoEnvio();
         cout<<"Costo envío "<<contador+1<<": "<<costo<<endl;
         totalEnvios+=costo;
+        
+        contador++;
     }
 
     cout<<"Costo total de los envíos: "<<totalEnvios<<endl;
     
     delete envio1;
     delete envio2;
-    
-    
 
-
-
-   return 0;
+    return 0;
       
 }

@@ -18,7 +18,7 @@ namespace {
         EXPECT_DOUBLE_EQ(esperada, actual);
     }   
 
-    TEST(EnvioFedEx_CalculoEnvio_Test, Test_DistanciaMayor500_PesoMenorOIgual10) {
+    TEST(EnvioFedEx_CalculoEnvio_Test, Test_DistanciaMayor500_PesoMenorIgual10) {
         /// AAA
 
         // Arange - se configura el escenario
@@ -34,7 +34,7 @@ namespace {
         EXPECT_DOUBLE_EQ(esperada, actual);
     }  
 
-    TEST(EnvioFedEx_CalculoEnvio_Test, Test_DistanciaMenorOIgual500_PesoMayor10) {
+    TEST(EnvioFedEx_CalculoEnvio_Test, Test_DistanciaMenorIgual500_PesoMayor10) {
         /// AAA
 
         // Arange - se configura el escenario
@@ -50,7 +50,7 @@ namespace {
         EXPECT_DOUBLE_EQ(esperada, actual);
     }  
 
-    TEST(EnvioFedEx_CalculoEnvio_Test, Test_DistanciaMenorOIgual500_PesoMenorOIgual10) {
+    TEST(EnvioFedEx_CalculoEnvio_Test, Test_DistanciaMenorIgual500_PesoMenorIgual10) {
         /// AAA
 
         // Arange - se configura el escenario

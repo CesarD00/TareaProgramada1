@@ -66,7 +66,7 @@ namespace {
         EXPECT_DOUBLE_EQ(esperada, actual);
     }
 
-    TEST(EnvioServicioPostal_CalculoEnvio_Test, Test_PesoIgualOMayor9_Clase1) {
+    TEST(EnvioServicioPostal_CalculoEnvio_Test, Test_PesoIgualMayor9_Clase1) {
         /// AAA
 
         // Arange - se configura el escenario
@@ -82,7 +82,7 @@ namespace {
         EXPECT_DOUBLE_EQ(esperada, actual);
     }   
 
-    TEST(EnvioServicioPostal_CalculoEnvio_Test, Test_PesoIgualOMayor9_Clase2) {
+    TEST(EnvioServicioPostal_CalculoEnvio_Test, Test_PesoIgualMayor9_Clase2) {
         /// AAA
 
         // Arange - se configura el escenario
