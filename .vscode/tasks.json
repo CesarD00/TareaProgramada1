@@ -13,5 +13,31 @@
                 "isDefault": true
             }
         }
+
+        ,
+
+        {
+            "label": "Compile EnvioServicioPostal tests",
+            "type": "shell",
+            "command": "make test_calculo_envio_postal",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+
+        , 
+
+        {
+            "label": "Compile EnvioFedEx tests",
+            "type": "shell",
+            "command": "make test_calculo_envio_fedex",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
     ]
 }
